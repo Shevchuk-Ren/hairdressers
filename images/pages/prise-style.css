@@ -1,0 +1,51 @@
+
+.price-list {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px black;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.price-list h2 {
+    margin-top: 30px;
+    font-size: 24px;
+    color: #333;
+}
+
+.price-list {
+    background-size:cover;
+    background-position: center;
+    max-width: 100%;
+    min-height: 400px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+td {
+    text-align: centre; 
+}
+
+th {
+    background-color: #f8f8f8;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
