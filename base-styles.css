@@ -1,3 +1,41 @@
+/* basic styles */
 body {
+    margin: 0;
     font-family: Roboto,Arial,Helvetica,sans-serif;
+    background-color: white;
+}
+header {
+    border-bottom:1px grey;
+
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    cursor:pointer;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* navigation */
+.nav-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.nav-list-item {
+    padding: 100% 10px;
+}
+.nav-list-item.active a {
+    border-bottom:2px #444; 
+    font-weight: bold;
 }
