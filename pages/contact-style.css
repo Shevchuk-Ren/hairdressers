@@ -6,13 +6,11 @@
 }
 
 .opening-hours {
-
-    /* padding: 50px 20px; */
     text-align: center;
 }
 
 
-h2, h3 {
+h2, h3, p {
     text-align:center;
     margin-bottom: 15px;
 
@@ -47,3 +45,4 @@ h2, h3 {
 td:hover {
     background-color: white;
 }
+
