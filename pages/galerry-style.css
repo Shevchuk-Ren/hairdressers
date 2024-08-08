@@ -1,6 +1,6 @@
 * {box-sizing:border-box}
 
-ul {
+.card-container ul {
   padding: 0;
 }
 
@@ -53,7 +53,6 @@ ul {
   background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -108,8 +107,6 @@ ul {
     padding: 0;
     max-width: 100%;
     display: flex;
-    /* justify-content: center; */
-
   }
   .card {
     margin: 10px;
@@ -152,18 +149,3 @@ ul {
  
 }
 
-/* @media screen and (max-width: 438px) {
-  .card-container {
-    margin: 0;
-    padding: 0;
-
-    display: flex;
-    justify-content: center;
-
-  }
-
-  .card img {
-    min-width: auto;
-  } 
- 
-} */
