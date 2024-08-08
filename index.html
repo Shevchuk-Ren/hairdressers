@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="base-styles.css">
     <link rel="stylesheet" href="home.css">
 
@@ -29,13 +30,30 @@
                 </a>
             </div>
 
+            <div class="menu-icon" id="menuIcon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h16v2H4v-2z"/>
+                </svg>
+            </div>
             <ul class="nav-list uppercase">
                 <li class="nav-list-item active"><a href="index.html">Home</a></li>
                 <li class="nav-list-item"><a href="./pages/prices.html">Price List</a></li>
                 <li class="nav-list-item"><a href="./pages/book.html">Book now</a></li>
                 <li class="nav-list-item"><a href="./pages/contacts.html">Contacts</a></li>
                 <li class="nav-list-item"><a href="./pages/gallery.html">Gallery</a></li>
-            </ul>
+             </ul>
+
+              <!-- Мобільне меню -->
+              <div class="mobile-menu" id="mobileMenu">
+                <button id="closeMenu" class="close-menu">&times;</button>
+                <ul class="mobile-nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Price List</a></li>
+                    <li><a href="coffee-types.html">Book</a></li>
+                    <li><a href="shop.html">Contacts</a></li>
+                    <li><a href="reviews.html">Gallery</a></li>
+                </ul>
+            </div>
 
         </nav>
 
@@ -107,5 +125,7 @@
  
         </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
 </body>
 </html>
