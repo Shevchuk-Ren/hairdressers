@@ -1,3 +1,5 @@
+* {box-sizing:border-box}
+
 /* basic styles */
 body {
     margin: 0;
@@ -163,6 +165,9 @@ footer {
     padding: 5px;
     margin-bottom: 3px;
     opacity: 0.6;
+}
+.address a {
+    color: white;
 }
 .policy {
     background-color: black;
