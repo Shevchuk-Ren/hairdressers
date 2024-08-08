@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../base-styles.css">
     <link rel="stylesheet" href="galerry-style.css">
     
-    <title>Contacts</title>
+    <title>Gallery</title>
 </head>
 
 <body>
@@ -34,30 +34,133 @@
     </div>  
 
 <section class="carousel-list">
-    <div class="carousel">
-        <div class="carousel-container">
-          <div class="carousel-slide">
-            <img src="../images/cards/blond2hair.jpg" alt="blondehair2">
-          </div>
-          <div class="carousel-slide">
-            <img src="../images/cards/greyhair.jpg" alt="greyhair">
+    <div class="slideshow-container">
+
+       
+        <div class="mySlides fade">
+          <img src="../images/cards/blond2hair.jpg" alt="blond2hair" style="width:100%">
         </div>
-          <div class="carousel-slide">
-            <img src="../images/cards/blondhair.jpg" alt="blondehair">
-          </div>
-          <div class="carousel-slide">
-            <img src="../images/cards/redhair.jpg" alt="redhair">
-          </div>
+      
+        <div class="mySlides fade">
+          <img src="../images/cards/greyhair.jpg" alt="greyhair" style="width:100%">
         </div>
-        <button class="carousel-prev">Prev</button>
-        <button class="carousel-next">Next</button>
+      
+        <div class="mySlides fade">
+          <img src="../images/cards/blondhair.jpg" alt="blondhair" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="../images/cards/redhair.jpg" alt="redhair" style="width:100%">
+        </div>
+      
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+     
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
       </div>
 
 
 </section>
 
+<section>
+<h2>Our works</h2>
 
 
+<div class="card-container">
+    <div class="card">
+      <img src="../images/portpholio/IMG_1898.jpg" alt="hairdres1" class="card-image">
+      <!-- <div class="card-content">
+        <h3>Стрижка</h3>
+        <p>Сучасна стрижка з чіткими лініями.</p>
+      </div> -->
+    </div>
+  
+    <div class="card">
+        <img src="../images/portpholio/IMG_1903.jpg" alt="hairdres2" class="card-image">
+      <!-- <div class="card-content">
+        <h3>Покраска волосся</h3>
+        <p>Ніжний перехід відтінків для досконалого вигляду.</p>
+      </div> -->
+    </div>
+  
+    <div class="card">
+        <img src="../images/portpholio/IMG_2751.jpg" alt="hairdres3" class="card-image">
+      <!-- <div class="card-content">
+        <h3>Весільна зачіска</h3>
+        <p>Елегантний стиль для вашого особливого дня.</p>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="../images/portpholio/IMG_2765.jpg" alt="hairdres4" class="card-image">
+  <!-- <div class="card-content">
+    <h3>Весільна зачіска</h3>
+    <p>Елегантний стиль для вашого особливого дня.</p>
+  </div> -->
+</div>
+</div>
+
+
+<div class="card">
+    <img src="../images/portpholio/IMG_3348.jpg" alt="hairdres5" class="card-image">
+  <!-- <div class="card-content">
+    <h3>Весільна зачіска</h3>
+    <p>Елегантний стиль для вашого особливого дня.</p>
+  </div> -->
+</div>
+</div>
+
+
+<div class="card">
+    <img src="../images/portpholio/IMG_3367.jpg" alt="hairdres6" class="card-image">
+  <!-- <div class="card-content">
+    <h3>Весільна зачіска</h3>
+    <p>Елегантний стиль для вашого особливого дня.</p>
+  </div> -->
+</div>
+</div>
+
+<div class="card">
+    <img src="../images/portpholio/IMG_4613.jpg" alt="hairdres7" class="card-image">
+  <!-- <div class="card-content">
+    <h3>Весільна зачіска</h3>
+    <p>Елегантний стиль для вашого особливого дня.</p>
+  </div> -->
+</div>
+</div>
+
+<div class="card">
+    <img src="../images/portpholio/IMG_5758.jpg" alt="hairdres8" class="card-image">
+  <!-- <div class="card-content">
+    <h3>Весільна зачіска</h3>
+    <p>Елегантний стиль для вашого особливого дня.</p>
+  </div> -->
+</div>
+</div>
+
+</section>
+
+
+
+
+
+
+
+<section class="works">
+
+
+
+
+</section>
 
 
 
@@ -107,6 +210,9 @@
         </div>
     </footer>
 
-    
+
+
+    <script src="gallery.js"></script>
+
 </body>
 </html>

@@ -1,4 +1,4 @@
-section {
+.price-head {
     padding-bottom: 50px;
 }
 
@@ -14,7 +14,7 @@ section {
     box-shadow: 0 0 10px black;
 }
 
-h1, h2 {
+.price-head h2 {
     text-align: center;
     margin-bottom: 20px;
 }
