@@ -86,12 +86,74 @@ section {
     font-weight: bold;
 }
 
+/* svg */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-icon svg {
+    width: 30px;
+    height: 30px;
+    fill: rgb(0, 0, 0);
+}
+
+/* Mobile*/
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.mobile-nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+}
+
+.mobile-nav-list li {
+    margin: 20px 0;
+}
+
+.mobile-nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+}
+
+.close-menu {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2em;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+
+
+
 /* hero */
 
 .hero {
     background-image: url('./images/hero/bigstock-Beautiful-Brown-haired-Girl-Wi-412461868.jpg');
     background-size:cover;
     background-position: center;
+    background-repeat: no-repeat;
+    /* height: 100vh; Full viewport height */
     color: white;
     text-shadow: black 0.2em 0.2em 0.4em;
     margin: 0 auto;
@@ -200,9 +262,33 @@ footer {
         display: none;
     }
 }
+
+
+/* Адаптивні стилі для мобільного меню */
+@media (max-width: 960px) {
+    .nav-list {
+        display: none; /* Сховати стандартне меню */
+    }
+
+    .menu-icon {
+        display: block; /* Показати іконку меню */
+        padding: 5px;
+    }
+    .mobile-nav-list {
+        display: block;
+        
+    }
+    .hero {
+        max-height: 300px;
+        object-fit: contain;
+    }
+}
+
 @media (max-width: 768px) {
     .hero {
-        height: 50vh;
+        /* background-size: contain; */
+        height: 250px; 
+        padding: 20px;
     }
     .policy-item {
         text-align: center;
@@ -213,4 +299,16 @@ footer {
         display: inline;
     }
 }
-
+@media (max-width: 480px) {
+    .hero {
+        /* background-size: contain;  */
+        height: 200px; 
+    }
+    h1 {
+        text-align: center;
+    }
+    .hero-btn {
+        display: inline;
+        text-align: center;
+    }
+}
