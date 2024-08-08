@@ -1,9 +1,12 @@
+.price-head {
+    padding-bottom: 50px;
+}
+
 
 .price-list {
     max-width: 100%;
     min-height: 400px;
     margin: 0 auto;
-    background-size:cover;
     background-position: center;
     background: #fff;
     padding: 20px;
@@ -11,13 +14,17 @@
     box-shadow: 0 0 10px black;
 }
 
-h1 {
+.price-head h2 {
     text-align: center;
+    font-size: 16px;
+    letter-spacing: 2px;
     margin-bottom: 20px;
 }
 
-.price-list h2 {
+.price-list h3 {
     margin-top: 30px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
     font-size: 24px;
     color: #333;
 }

@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+}
+
 .map {
     width: 100%;
     min-height: 400px;
@@ -6,16 +10,21 @@
 }
 
 .opening-hours {
-
-    /* padding: 50px 20px; */
     text-align: center;
 }
 
+.contacts {
+padding-bottom: 50px;
+}
 
-h2, h3 {
+.map h2, .map p, .opening-hours h3 {
     text-align:center;
     margin-bottom: 15px;
 
+}
+.map h2, .opening-hours h3 {
+    font-size: 16px;
+    letter-spacing: 2px;
 }
 .opening-hours h2 {
     font-size: 2.5em;
@@ -47,3 +56,4 @@ h2, h3 {
 td:hover {
     background-color: white;
 }
+
