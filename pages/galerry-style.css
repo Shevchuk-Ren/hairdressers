@@ -1,5 +1,9 @@
 * {box-sizing:border-box}
 
+ul {
+  padding: 0;
+}
+
 .slideshow-container {
   max-width: 100%;
   position: relative;
@@ -84,6 +88,13 @@
   overflow: hidden;
   width: 300px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 20px 20px;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .card:hover {
@@ -91,9 +102,68 @@
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
-.card-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+@media screen and (max-width: 1041px) {
+  .card-container {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    display: flex;
+    /* justify-content: center; */
+
+  }
+  .card {
+    margin: 10px;
+  }
+ 
+
+
 }
 
+@media screen and (max-width: 998px) {
+  .card-container {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+  }
+  .card {
+    margin: 10px;
+  }
+ 
+
+
+}
+
+@media screen and (max-width: 754px) {
+  .card-container {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+
+  }
+  .card {
+    min-width: 80%;
+    margin: 10px;
+  }
+ 
+}
+
+/* @media screen and (max-width: 438px) {
+  .card-container {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .card img {
+    min-width: auto;
+  } 
+ 
+} */
