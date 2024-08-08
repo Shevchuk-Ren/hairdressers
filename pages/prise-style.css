@@ -16,12 +16,15 @@
 
 .price-head h2 {
     text-align: center;
+    font-size: 16px;
+    letter-spacing: 2px;
     margin-bottom: 20px;
 }
 
 .price-list h3 {
     margin-top: 30px;
     margin-bottom: 30px;
+    letter-spacing: 2px;
     font-size: 24px;
     color: #333;
 }
