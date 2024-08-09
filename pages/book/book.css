@@ -22,10 +22,11 @@ legend {
     /* border-radius: 10px; */
   }
   
-  .booking p {
+  .booking h2 {
     margin: 0 0 30px;
     padding: 0;
-    /* color: #fff; */
+    font-size: 16px;
+    letter-spacing: 2px;
     color: #1B1E25;
     text-align: center;
   }
@@ -63,7 +64,10 @@ legend {
     color: #e74c3c;
     font-size: 14px;
   }
-  
+  .btn-list {
+    display: flex;
+    justify-content: end;
+  }
   .booking-btn {
     display: block;
     background-color: white;
@@ -71,6 +75,7 @@ legend {
     border: 1px solid #333333;
     font-size: 18px;
     letter-spacing: 2px;
+    margin-left: 10px;
     margin-top: 15px;
     padding: 0.5rem;
     width: fit-content;

@@ -101,7 +101,7 @@ section {
     fill: rgb(0, 0, 0);
 }
 
-/* Mobile*/
+/* Mobile menu*/
 .mobile-menu {
     display: none;
     position: fixed;
@@ -146,9 +146,6 @@ section {
     cursor: pointer;
 }
 
-
-
-
 /* hero */
 
 .hero {
@@ -156,7 +153,6 @@ section {
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* height: 100vh; Full viewport height */
     color: white;
     text-shadow: black 0.2em 0.2em 0.4em;
     margin: 0 auto;
@@ -191,7 +187,6 @@ section {
 footer {
     background-color: #1B1E25;
     color: white;
-    /* height: 100px; */
     padding-top: 15px;
 }
 .footer-title {
@@ -249,8 +244,14 @@ footer {
 .policy-item:last-child {
     margin-right: 0;
 }
+
+.policy-thumb, .footer-thumb {
+    width: 40px;
+    height: 40px;
+}
 .policy-svg {
     display: block;
+
     width: 30px;
     height: 30px;
     opacity: 0.6;
@@ -262,21 +263,21 @@ footer {
     opacity: 1;
     transition: 0.3s;
 }
+
+/* mobile */
 @media (max-width: 1080px) {
     .hero-wraper video {
         display: none;
     }
 }
 
-
-/* Адаптивні стилі для мобільного меню */
 @media (max-width: 960px) {
     .nav-list {
-        display: none; /* Сховати стандартне меню */
+        display: none; 
     }
 
     .menu-icon {
-        display: block; /* Показати іконку меню */
+        display: block; 
         padding: 5px;
     }
     .mobile-nav-list {
@@ -291,14 +292,17 @@ footer {
 
 @media (max-width: 768px) {
     .hero {
-        /* background-size: contain; */
         height: 250px; 
         padding: 20px;
     }
     .policy-item {
         text-align: center;
+
         flex: 1 1 50%;
         justify-content: center;
+    }
+    .policy-thumb {
+        width: 100%;
     }
     .policy-svg {
         display: inline;
@@ -306,7 +310,6 @@ footer {
 }
 @media (max-width: 480px) {
     .hero {
-        /* background-size: contain;  */
         height: 200px; 
     }
     h1 {
@@ -314,6 +317,10 @@ footer {
     }
     .hero-btn {
         display: inline;
+        text-align: center;
+    }
+
+    .policy-svg  {
         text-align: center;
     }
 }

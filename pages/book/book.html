@@ -6,145 +6,112 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="base-styles.css">
-    <link rel="stylesheet" href="home.css">
-
-    <title>Elegance Hair Studio</title>
-
+    <link rel="stylesheet" href="../../base-styles.css">
+    <link rel="stylesheet" href="book.css">
+    <title>Book</title>
 
 </head>
+
 <body>
+    <div class="container">
 
-<div class="container">
+        <header>
+            
+            <nav class="nav-menu">
 
-    <header>
-       
-
-        <nav class="nav-menu">
-
-            <div class="nav-logo">
-                <a href="index.html">
-                    <h3 class="uppercase">Elegance Hair Studio</h3>
-                    <p>number one</p>
-                </a>
-            </div>
-
-            <div class="menu-icon" id="menuIcon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h16v2H4v-2z"/>
-                </svg>
-            </div>
-            <ul class="nav-list uppercase">
-                <li class="nav-list-item active"><a href="index.html">Home</a></li>
-                <li class="nav-list-item"><a href="./pages/price/prices.html">Price List</a></li>
-                <li class="nav-list-item"><a href="./pages/book/book.html">Book now</a></li>
-                <li class="nav-list-item"><a href="./pages/contacts/contacts.html">Contacts</a></li>
-                <li class="nav-list-item"><a href="./pages/gallery/gallery.html">Gallery</a></li>
-             </ul>
-
-              <!-- Мобільне меню -->
-              <div class="mobile-menu" id="mobileMenu">
-                <button id="closeMenu" class="close-menu">&times;</button>
-                <ul class="mobile-nav-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="./pages/price/prices.html">Price List</a></li>
-                    <li><a href="./pages/book/book.html">Book</a></li>
-                    <li><a href="./pages/contacts/contacts.html">Contacts</a></li>
-                    <li><a href="./pages/gallery/gallery.html">Gallery</a></li>
-                </ul>
-            </div>
-
-        </nav>
-
-    </header>
-</div>  
+                <div class="nav-logo">
+                    <a href="../../index.html">
+                        <h3 class="uppercase">Elegance Hair Studio</h3>
+                        <p>number one</p>
+                    </a>
+                </div>
+    
+                <div class="menu-icon" id="menuIcon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h16v2H4v-2z"/>
+                    </svg>
+                </div>
+                <ul class="nav-list uppercase">
+                    <li class="nav-list-item"><a href="../../index.html">Home</a></li>
+                    <li class="nav-list-item"><a href="../price/prices.html">Price List</a></li>
+                    <li class="nav-list-item active"><a href="book.html">Book now</a></li>
+                    <li class="nav-list-item"><a href="../contacts/contacts.html">Contacts</a></li>
+                    <li class="nav-list-item"><a href="../gallery/gallery.html">Gallery</a></li>
+                 </ul>
+    
+                  <!-- Мобільне меню -->
+                  <div class="mobile-menu" id="mobileMenu">
+                    <button id="closeMenu" class="close-menu">&times;</button>
+                    <ul class="mobile-nav-list">
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../price/prices.html">Price List</a></li>
+                        <li><a href="book.html">Book</a></li>
+                        <li><a href="../contacts/contacts.html">Contacts</a></li>
+                        <li><a href="../gallery/gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+    
+            </nav>
+    
+        </header>
+    </div>   
+   
     <main>
-        <section class="hero uppercase">
+        <div class="container">
+        <section class="booking">
+            <form action="Book.php" method="post">
+                <h2 class="uppercase">Book now</h2>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                <ul>
+                    <li class="user-box">
+                        <input type="text" name="FirstName" required="">
+                        <label id="FirstName">First name</label> 
+                    </li>
+                    <li class="user-box">
+                        <input type="email" name="Email" required>
+                        <label>Email</label>
+                    </li>
+                       <li class="user-box">
+                        <input type="text" name="Mobile" required> </label>
+                        <label id="Mobile">Mobile</label>
+                    </li>
+                    <li class="user-box">
+                        <input type="date" name="Date" required>
+                    </li>
+                    <li class="user-box">
+                        <input type="time" name="Time" min="08:00" max="19:00">
+                    </li>
+                    <li class="user-box">
+                        <input type="text" name="Service" list="service">
+                        <label id="Service">Select service</label>
+                    </li>
+                </ul>
+                <datalist id="service">
+                    <option value="For Her: Wash, cut & blow-dry"> 
+                    <option value="For Her: Wash & blow-dry">
+                    <option value="For Her: Fringe trim"> 
+                    <option value="Colour: Tint:Full head"> 
+                    <option value="Colour: Head highlight">
+                    <option value="Colour: Balayage / Bespoke"> 
+                    <option value="For Him Wash & styling">
+                    <option value="For Him: Colour blend"> 
+                    <option value="For Him: Olaplex without colour">
+                    <option value="For Him: Full head tint"> 
+                </datalist>
+                </fieldset>
+                <div class="btn-list">
+                    <input class="booking-btn" type="submit" value="Submit">
+                    <input class="booking-btn" type="reset" value="Clear">
 
-            <div class="hero-wraper">
-                <h1 class="hero-title">
-                    Welcome to Elegance Hair Studio
-                </h1>
-                <video width="fit-content" height="240" controls preload="auto" autoplay>
-                    <source src="./video/istockphoto-1406975958-640_adpp_is.mp4" type="video/mp4">
-                  </video>
-                <a class="hero-btn" href="./pages/book/book.html">
-                    Book Now
-                </a>
-            </div>
-           
+                </div>
+
+            </form>
+
         </section>
-
-         <div class="container">
-         <section class="about">
-            <h2 class="about-title uppercase">Why Choose Elegance Hair Studio?</h2>
-            <p>Elegance Hair Studio is where style meets expertise. We offer a personalized approach, using only professional products and the latest techniques. Our experienced stylists are dedicated to enhancing your natural beauty and creating a look you'll love. Visit us to experience luxurious service and leave the salon with confidence and charm.</p>
-         </section>
-
-<!-- team -->
-         <section class="team">
-            <ul class="teamlist">
-
-                <li class="team-item">
-                    <article class="team-card">
-
-                    <div class="team-thumb">
-                      <img class="team-image" srcset="" src="./images/team/Barberella_14_S02_413.jpg" alt="Lili" >
-                    </div>
-                    <div class="team-content">
-                        <h3 class="team-employee">Lily Gray</h3>
-                        <p class="team-description" lang="en">Senior Hairdresser</p>
-                    </div>
-                    </article>
-                </li>
-
-                <li class="team-item">
-                    <article class="team-card">
-
-                    <div class="team-thumb">
-                      <img class="team-image" srcset="" src="./images/team/SEAN-HANNA-SHOT-05_9920-01-warm-10x8-1-240x300.jpg" alt="Susan" >
-                    </div>
-                    <div class="team-content">
-                        <h3 class="team-employee">Susan Swift</h3>
-                        <p class="team-description" lang="en">Hairdresser</p>
-                    </div>
-                    </article>
-                </li>
-
-                <li class="team-item">
-                    <article class="team-card">
-
-                    <div class="team-thumb">
-                      <img class="team-image" srcset="" src="./images/team/polar_fusion_nina_01_113_v2_rgb_72dpi.jpg" alt="Nina" >
-                    </div>
-                    <div class="team-content">
-                        <h3 class="team-employee">Nina Hagen</h3>
-                        <p class="team-description" lang="en">Hairdresser</p>
-                    </div>
-                    </article>
-                </li>
-
-                <li class="team-item">
-                    <article class="team-card">
-
-                    <div class="team-thumb">
-                      <img class="team-image" srcset="" src="./images/team/StevieEnglish41.jpg" alt="Holms" >
-                    </div>
-                    <div class="team-content">
-                        <h3 class="team-employee">Ketty Holms</h3>
-                        <p class="team-description" lang="en">Hairdresser</p>
-                    </div>
-                    </article>
-                </li>
-
-
-            </ul>
-         </section>
-        </div>
+    </div>
     </main>
 
-    
     <footer>
         
         <h4 class="footer-title uppercase">Follow Elegance Hair Studio for news and trends</h4>
@@ -152,18 +119,19 @@
            <ul class="footer-media">
                <li>
                 <div class="footer-thumb">
-                    <a href="" target="_blank"><img class="media-item" src="./images/svg/icons/facebook.svg" alt="facebook"/></a>
+                    <a href="" target="_blank"><img class="media-item" src="../../images/svg/icons/facebook.svg" alt="facebook"/></a>
                 </div>
             </li>
                <li>
                 <div class="footer-thumb">
-                    <a href="https://www.instagram.com/cream.dream_london/?igsh=dnVnbXRxY3Mzazhi" target="_blank"><img class="media-item" src="./images/svg/icons/instagram.svg" alt="instagram"/></a>
+                    <a href="https://www.instagram.com/cream.dream_london/?igsh=dnVnbXRxY3Mzazhi" target="_blank">
+                        <img class="media-item" src="../../images/svg/icons/instagram.svg" alt="instagram"/></a>
                 </div>
             </li>
                <li>
                 <div class="footer-thumb">
                     <a href="https://x.com/elonmusk" target="_blank">
-                        <img class="media-item" src="./images/svg/icons/twitter.svg" alt="twitter"/>
+                        <img class="media-item" src="../../images/svg/icons/twitter.svg" alt="twitter"/>
                     </a>
                 </div>
             </li>
@@ -218,6 +186,6 @@
     </div>
     </footer>
 
-    <script src="./js/menu.js"></script>
+    <script src="../../js/menu.js"></script>
 </body>
 </html>
